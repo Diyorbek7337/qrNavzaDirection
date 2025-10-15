@@ -237,9 +237,9 @@ export default function NavzaLoungeMenu() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-green-400 via-black-500 to-green-600">
+    <div className="min-h-screen bg-gradient-to-br from-yellow-400 via-black-500 to-orange-600">
       {/* Header */}
-      <div className="p-6 text-white shadow-2xl bg-gradient-to-r from-green-900 to-green-600">
+      <div className="p-6 text-white shadow-2xl bg-gradient-to-r from-yellow-900 to-orange-600">
         <div className="max-w-3xl mx-auto text-center">
           <div className="flex items-center justify-center mb-3">
             <div className="px-6 py-3 bg-gray-900 rounded-lg">
@@ -397,8 +397,8 @@ export default function NavzaLoungeMenu() {
         </div>
 
         {/* Footer Logo */}
-        <div className="mt-6 text-center text-black">
-          <p className="text-sm">🍔 MA'ZALI VA TEZ YETKAZIB BERISH 🍕</p>
+        <div className="mt-6 text-center text-white">
+          <p className="text-lg">🍔 MA'ZALI VA TEZ YETKAZIB BERISH 🍕</p>
         </div>
       </div>
     </div>
