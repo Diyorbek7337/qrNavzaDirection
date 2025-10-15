@@ -16,6 +16,16 @@ import Triple from "./assets/image/triple.png"
 import Gushtlihotdog from "./assets/image/gushtlihotdog.png"
 import NavzaPizza from "./assets/image/navzapizza.png"
 import Tanduri from "./assets/image/tanduri.png"
+import Barbekyu from "./assets/image/barbekyupizza.jpg"
+import Klab from "./assets/image/klab.jpg"
+import Donar from "./assets/image/donar.jpg"
+import Mikspizza from "./assets/image/mikspizza.png"
+import Pitta from "./assets/image/pitta.jpg"
+import Sosiska from "./assets/image/sosiska.png"
+import Fri from "./assets/image/fri.png"
+import SosiskaFri from "./assets/image/sosiskafri.png"
+import Chesnochniy from "./assets/image/chesnochniy.png"
+import Sirniy from "./assets/image/sirniy.png"
 
 export default function NavzaLoungeMenu() {
   const [activeCategory, setActiveCategory] = useState('burger');
@@ -85,13 +95,11 @@ export default function NavzaLoungeMenu() {
         ]
       },
       { 
-        name: "MIKS", 
-        desc: "pishloq, sous, pomidor, bolgarskiy, makkajo'xori, qo'ziqorin, sosiska, vetchina, go'sht",
-        image: "https://images.unsplash.com/photo-1513104890138-7c749659a591?w=400&h=300&fit=crop",
+        name: "MIKS BUYUK", 
+        desc: "pishloq, sous, pomidor, bolgarskiy, makkajo'xori, qo'ziqorin, sosiska, vetchina, go'sht, zaytun, indeyka",
+        image: Mikspizza,
         sizes: [
-          { size: "30 sm", price: "90 000" },
-          { size: "35 sm", price: "100 000" },
-          { size: "40 sm", price: "120 000" }
+          { size: "45 sm", price: "150 000" }
         ]
       },
       { 
@@ -104,7 +112,7 @@ export default function NavzaLoungeMenu() {
         ]
       },
       { 
-        name: "Tanduri", 
+        name: "TANDURI", 
         desc: "pishloq, sous, kolbasa, sosiska",
         image:Tanduri,
         sizes: [
@@ -114,44 +122,94 @@ export default function NavzaLoungeMenu() {
         ]
       },
       { 
-        name: "Barbekyu", 
+        name: "BARBEKYU", 
         desc: "pishloq, sous, go'sht, tovuq go'sht, qo'ziqorin",
-        image: Tanduri,
+        image: Barbekyu,
         sizes: [
           { size: "30 sm", price: "84 000" },
           { size: "35 sm", price: "94 000" },
           { size: "40 sm", price: "120 000" }
         ]
       },
+       { 
+        name: "MIKS", 
+        desc: "pishloq, sous, go'sht, qo'ziqorin, pomidor, bolgarskiy, makkajo'xori, sosiska, vetchina",
+        image: Mikspizza,
+        sizes: [
+          { size: "30 sm", price: "90 000" },
+          { size: "35 sm", price: "100 000" },
+          { size: "40 sm", price: "120 000" }
+        ]
+      },
+       { 
+        name: "4 GO'SHT", 
+        desc: "pishloq, sous, go'sht, kolbasa, sosiska, vetchina",
+        image: Mikspizza,
+        sizes: [
+          { size: "30 sm", price: "87 000" },
+          { size: "35 sm", price: "97 000" },
+          { size: "40 sm", price: "120 000" }
+        ]
+      },
+      { 
+        name: "4 FASL", 
+        desc: "pishloq, sous, go'sht, kolbasa, sosiska, zaytun",
+        image: Mikspizza,
+        sizes: [
+          { size: "30 sm", price: "90 000" },
+          { size: "35 sm", price: "97 000" },
+          { size: "40 sm", price: "120 000" }
+        ]
+      },
     ],
     pitta: [
-      { name: "Oddiy", price: "36 000", image: "https://images.unsplash.com/photo-1529006557810-274b9b2fc783?w=400&h=300&fit=crop" },
-      { name: "Mangal", price: "39 000", image: "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=400&h=300&fit=crop" },
-      { name: "Katta", price: "60 000", image: "https://images.unsplash.com/photo-1628840042765-356cda07504e?w=400&h=300&fit=crop" }
+      { name: "Oddiy", price: "36 000", image: Pitta },
+      { name: "Mangal", price: "39 000", image: Pitta },
+      { name: "Katta", price: "60 000", image: Pitta }
     ],
     donar: [
-      { name: "O'rta", price: "30 000", image: "https://images.unsplash.com/photo-1529006557810-274b9b2fc783?w=400&h=300&fit=crop" },
-      { name: "Katta", price: "33 000", image: "https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=400&h=300&fit=crop" }
+      { name: "O'rta", price: "30 000", image: Donar },
+      { name: "Katta", price: "33 000", image: Donar }
     ],
     klab: [
-      { name: "O'rta", price: "45 000", image: "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?w=400&h=300&fit=crop" }
+      { name: "O'rta", price: "45 000", image: Klab }
     ],
     kfc: [
       { name: "Strips 0,5kg", price: "65 000", image: "https://images.unsplash.com/photo-1562967914-608f82629710?w=400&h=300&fit=crop" },
-      { name: "Strips 1kg", price: "110 000", image: "https://images.unsplash.com/photo-1562967914-608f82629710?w=400&h=300&fit=crop" },
-      { name: "Oyoqcha 0,5kg", price: "65 000", image: "https://images.unsplash.com/photo-1585238341710-4a3cc291ee56?w=400&h=300&fit=crop" },
-      { name: "Oyoqcha 1kg", price: "105 000", image: "https://images.unsplash.com/photo-1585238341710-4a3cc291ee56?w=400&h=300&fit=crop" }
+      { name: "Strips 1kg", price: "110 000", image: "https://images.unsplash.com/photo-1562967914-608f82629710?w=400&h=300&fit=crop" }
     ],
     twister: [
       { name: "Oddiy", price: "33 000", image: "https://images.unsplash.com/photo-1626700051175-6818013e1d4f?w=400&h=300&fit=crop" },
       { name: "Pishloqli", price: "36 000", image: "https://images.unsplash.com/photo-1599974789926-3e25a5fdc8e2?w=400&h=300&fit=crop" }
     ],
     garnir: [
-      { name: "Fri mini", price: "12 000", image: "https://images.unsplash.com/photo-1573080496219-bb080dd4f877?w=400&h=300&fit=crop" },
-      { name: "Fri o'rta", price: "16 000", image: "https://images.unsplash.com/photo-1573080496219-bb080dd4f877?w=400&h=300&fit=crop" },
-      { name: "Fri katta", price: "20 000", image: "https://images.unsplash.com/photo-1573080496219-bb080dd4f877?w=400&h=300&fit=crop" },
+      { name: "Fri o'rta", price: "16 000", image: Fri },
+      { name: "Fri katta", price: "20 000", image: Fri },
       { name: "Kotlet", price: "16 000", image: "https://images.unsplash.com/photo-1432139509613-5c4255815697?w=400&h=300&fit=crop" },
-      { name: "Sosiska", price: "5 000", image: "https://images.unsplash.com/photo-1612392061787-2d078b3e573f?w=400&h=300&fit=crop" }
+      { name: "Sosiska", price: "5 000", image: Sosiska },
+      { name: "Sosiska + Fri", price: "28 000", image: SosiskaFri },
+      { name: "Chesnochniy sous", price: "2 000", image: Chesnochniy },
+      { name: "Pishloq", price: "3 000", image: Sirniy }
+    ],
+    Salat: [
+      { name: "Barf", price: "30 000", image: "https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=400&h=300&fit=crop" },
+      { name: "Sezar", price: "35 000", image: "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=400&h=300&fit=crop" },
+      { name: "Olivye", price: "25 000", image: "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&h=300&fit=crop" }
+    ],
+    ichimlik: [
+      { name: "Coca-Cola 0.5L", price: "8 000", image: "https://images.unsplash.com/photo-1562157874-818bc0726f68?w=400&h=300&fit=crop" },
+      { name: "Fanta 0.5L", price: "8 000", image: "https://images.unsplash.com/photo-1574226516831-e1dff420e43e?w=400&h=300&fit=crop" },
+      { name: "Sprite 1.5L", price: "16 000", image: "https://images.unsplash.com/photo-1580910051074-8f3b2e6f1f4b?w=400&h=300&fit=crop" },
+      { name: "Coca-Cola 1.5L", price: "16 000", image: "https://images.unsplash.com/photo-1562157874-818bc0726f68?w=400&h=300&fit=crop" },
+      { name: "Fanta 1.5L", price: "16 000", image: "https://images.unsplash.com/photo-1574226516831-e1dff420e43e?w=400&h=300&fit=crop" },
+      { name: "Coca-Cola 1L", price: "12 000", image: "https://images.unsplash.com/photo-1580910051074-8f3b2e6f1f4b?w=400&h=300&fit=crop" },
+      { name: "Fanta 1L", price: "12 000", image: "https://images.unsplash.com/photo-1617191511973-4dcbf3a3e6c1?w=400&h=300&fit=crop" }, 
+      { name: "Ark Tea 0.5L", price: "5 000", image: "https://images.unsplash.com/photo-1567306226416-28f0efdc88ce?w=400&h=300&fit=crop" }
+    ],
+    desert: [
+      { name: "Snikers", price: "35 000", image: "https://images.unsplash.com/photo-1600891964599-f61ba0e24092?w=400&h=300&fit=crop" },
+      { name: "Cheesecake", price: "45 000", image: "https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=400&h=300&fit=crop" },
+      { name: "Bell-Roll", price: "20 000", image: "https://images.unsplash.com/photo-1542831371-d531d36971e6?w=400&h=300&fit=crop" }
     ]
   };
 
@@ -165,7 +223,10 @@ export default function NavzaLoungeMenu() {
     klab: { name: "Klab Sendvich", icon: "🥪" },
     kfc: { name: "KFC", icon: "🍗" },
     twister: { name: "Twister", icon: "🌯" },
-    garnir: { name: "Garnir", icon: "🍟" }
+    garnir: { name: "Garnir", icon: "🍟" },
+    Salat: { name: "Salat", icon: "🥗" },
+    ichimlik: { name: "Ichimlik", icon: "🥤" },
+    desert: { name: "Desert", icon: "🍰" }
   };
 
   const contactInfo = {
@@ -179,7 +240,7 @@ export default function NavzaLoungeMenu() {
     <div className="min-h-screen bg-gradient-to-br from-green-400 via-black-500 to-green-600">
       {/* Header */}
       <div className="p-6 text-white shadow-2xl bg-gradient-to-r from-green-900 to-green-600">
-        <div className="max-w-4xl mx-auto text-center">
+        <div className="max-w-3xl mx-auto text-center">
           <div className="flex items-center justify-center mb-3">
             <div className="px-6 py-3 bg-gray-900 rounded-lg">
               <img className='logotip' src={Logo} alt='logo'/>
