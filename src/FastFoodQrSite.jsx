@@ -26,6 +26,15 @@ import Fri from "./assets/image/fri.png"
 import SosiskaFri from "./assets/image/sosiskafri.png"
 import Chesnochniy from "./assets/image/chesnochniy.png"
 import Sirniy from "./assets/image/sirniy.png"
+import Gosht4 from "./assets/image/4gosht.png"
+import Cola from "./assets/image/cola.png"
+import Fanta from "./assets/image/fanta.png"
+import Sprite from "./assets/image/sprite.png"
+import ArkTea from "./assets/image/arktea.png"
+import Barf from "./assets/image/barf.png"
+import Sezar from "./assets/image/sezar.png"
+import Olivye from "./assets/image/olivye.png"
+import Mujskoy from "./assets/image/mujskoy.png"
 
 export default function NavzaLoungeMenu() {
   const [activeCategory, setActiveCategory] = useState('burger');
@@ -144,7 +153,7 @@ export default function NavzaLoungeMenu() {
        { 
         name: "4 GO'SHT", 
         desc: "pishloq, sous, go'sht, kolbasa, sosiska, vetchina",
-        image: Mikspizza,
+        image: Gosht4,
         sizes: [
           { size: "30 sm", price: "87 000" },
           { size: "35 sm", price: "97 000" },
@@ -192,19 +201,21 @@ export default function NavzaLoungeMenu() {
       { name: "Pishloq", price: "3 000", image: Sirniy }
     ],
     Salat: [
-      { name: "Barf", price: "30 000", image: "https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=400&h=300&fit=crop" },
-      { name: "Sezar", price: "35 000", image: "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=400&h=300&fit=crop" },
-      { name: "Olivye", price: "25 000", image: "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&h=300&fit=crop" }
+      { name: "Barf", price: "30 000", image: Barf },
+      { name: "Sezar", price: "35 000", image: Sezar },
+      { name: "Olivye", price: "25 000", image: Olivye },
+      { name: "Mujskoy Kapriz", price: "40 000", image: Mujskoy }
     ],
     ichimlik: [
-      { name: "Coca-Cola 0.5L", price: "8 000", image: "https://images.unsplash.com/photo-1562157874-818bc0726f68?w=400&h=300&fit=crop" },
-      { name: "Fanta 0.5L", price: "8 000", image: "https://images.unsplash.com/photo-1574226516831-e1dff420e43e?w=400&h=300&fit=crop" },
-      { name: "Sprite 1.5L", price: "16 000", image: "https://images.unsplash.com/photo-1580910051074-8f3b2e6f1f4b?w=400&h=300&fit=crop" },
-      { name: "Coca-Cola 1.5L", price: "16 000", image: "https://images.unsplash.com/photo-1562157874-818bc0726f68?w=400&h=300&fit=crop" },
-      { name: "Fanta 1.5L", price: "16 000", image: "https://images.unsplash.com/photo-1574226516831-e1dff420e43e?w=400&h=300&fit=crop" },
-      { name: "Coca-Cola 1L", price: "12 000", image: "https://images.unsplash.com/photo-1580910051074-8f3b2e6f1f4b?w=400&h=300&fit=crop" },
-      { name: "Fanta 1L", price: "12 000", image: "https://images.unsplash.com/photo-1617191511973-4dcbf3a3e6c1?w=400&h=300&fit=crop" }, 
-      { name: "Ark Tea 0.5L", price: "5 000", image: "https://images.unsplash.com/photo-1567306226416-28f0efdc88ce?w=400&h=300&fit=crop" }
+      { name: "Coca-Cola 0.5L", price: "8 000", image: Cola },
+      { name: "Fanta 0.5L", price: "8 000", image: Fanta },
+      { name: "Sprite 1.5L", price: "16 000", image: Sprite },
+      { name: "Coca-Cola 1.5L", price: "16 000", image: Cola },
+      { name: "Fanta 1.5L", price: "16 000", image: Fanta },
+      { name: "Coca-Cola 1L", price: "12 000", image: Cola },
+      { name: "Fanta 1L", price: "12 000", image: Fanta }, 
+      { name: "Ark Tea 0.5L", price: "5 000", image: ArkTea },
+      { name: "Ark Tea 1.25L", price: "10 000", image: ArkTea }
     ],
     desert: [
       { name: "Snikers", price: "35 000", image: "https://images.unsplash.com/photo-1600891964599-f61ba0e24092?w=400&h=300&fit=crop" },
@@ -392,7 +403,7 @@ export default function NavzaLoungeMenu() {
         {/* Working Hours */}
         <div className="p-6 text-center text-white bg-black shadow-2xl rounded-2xl">
           <h3 className="mb-2 text-2xl font-bold">⏰ Ish vaqti</h3>
-          <p className="text-xl font-semibold">Har kuni: 10:00 -02:00</p>
+          <p className="text-xl font-semibold">Har kuni: 11:00 -02:00</p>
           <p className="mt-2 text-lg text-orange-100">🚚 Yetkazib berish: 20-30 daqiqa</p>
         </div>
 
