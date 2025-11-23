@@ -51,6 +51,8 @@ import Twister from "./assets/image/twister.png"
 import Kivi from "./assets/image/kivi.jpg"
 import Qulupnay from "./assets/image/qulupnay.png"
 import Ocean from "./assets/image/ocean.png"
+import Majnuntol from "./assets/image/majnuntol.jpg"
+import Fransuzkiy from "./assets/image/fransuzkiy.jpg"
 
 export default function NavzaLoungeMenu() {
   const [activeCategory, setActiveCategory] = useState('burger');
@@ -223,26 +225,26 @@ export default function NavzaLoungeMenu() {
 
  const menuItems = {
     burger: [
-      { name: "Gamburger", price: "32 000", image: Gamburger },
-      { name: "Big Burger", price: "43 000", image: BigGamburger },
-      { name: "Chizburger", price: "35 000", image: Chizburger },
-      { name: "Big Chizburger", price: "48 000", image: BigChizburger },
+      { name: "Gamburger", price: "35 000", image: Gamburger },
+      { name: "Big Burger", price: "45 000", image: BigGamburger },
+      { name: "Chizburger", price: "38 000", image: Chizburger },
+      { name: "Big Chizburger", price: "50 000", image: BigChizburger },
     ],
     lavash: [
-      { name: "Mini", price: "30 000", image: Lavash },
-      { name: "Mini Pishloqli", price: "33 000", image: Lavashchiz },
-      { name: "Oddiy", price: "34 000", image: Lavash },
-      { name: "Oddiy Pishloqli", price: "37 000", image: Lavashchiz },
-      { name: "Katta", price: "60 000", image: Lavash },
-      { name: "Tandir", price: "39 000", image: Tandirlavash },
-      { name: "Katta Tandir", price: "61 000", image: Kattatandir }
+      { name: "Mini", price: "32 000", image: Lavash },
+      { name: "Mini Pishloqli", price: "35 000", image: Lavashchiz },
+      { name: "Oddiy", price: "36 000", image: Lavash },
+      { name: "Oddiy Pishloqli", price: "38 000", image: Lavashchiz },
+      { name: "Katta", price: "63 000", image: Lavash },
+      { name: "Tandir", price: "42 000", image: Tandirlavash },
+      { name: "Katta Tandir", price: "63 000", image: Kattatandir }
     ],
     hotdog: [
-      { name: "Oddiy", price: "19 000", image: Oddiy },
-      { name: "Korolevskiy", price: "24 000", image: Korolevskiy },
-      { name: "Chizdog", price: "22 000", image: Chizdog },
-      { name: "Tripl", price: "26 000", image: Triple },
-      { name: "Go'shtli", price: "32 000", image: Gushtlihotdog }
+      { name: "Oddiy", price: "20 000", image: Oddiy },
+      { name: "Korolevskiy", price: "26 000", image: Korolevskiy },
+      { name: "Chizdog", price: "24 000", image: Chizdog },
+      { name: "Tripl", price: "28 000", image: Triple },
+      { name: "Go'shtli", price: "35 000", image: Gushtlihotdog }
     ],
     pizza: [
       { 
@@ -345,24 +347,24 @@ export default function NavzaLoungeMenu() {
     
     ],
     pitta: [
-      { name: "Oddiy", price: "36 000", image: Pitta },
-      { name: "Mangal", price: "39 000", image: Pitta },
+      { name: "Oddiy", price: "38 000", image: Pitta },
+      { name: "Mangal", price: "42 000", image: Pitta },
       { name: "Katta", price: "60 000", image: Pitta }
     ],
     donar: [
-      { name: "O'rta", price: "30 000", image: Donar },
-      { name: "Katta", price: "33 000", image: Donar }
+      { name: "O'rta", price: "32 000", image: Donar },
+      { name: "Katta", price: "35 000", image: Donar }
     ],
     klab: [
-      { name: "O'rta", price: "45 000", image: Klab }
+      { name: "O'rta", price: "47 000", image: Klab }
     ],
     kfc: [
       { name: "Strips 0,5kg", price: "65 000", image: "https://images.unsplash.com/photo-1562967914-608f82629710?w=400&h=300&fit=crop" },
       { name: "Strips 1kg", price: "110 000", image: "https://images.unsplash.com/photo-1562967914-608f82629710?w=400&h=300&fit=crop" }
     ],
     twister: [
-      { name: "Oddiy", price: "33 000", image: Twister },
-      { name: "Pishloqli", price: "36 000", image: Twister }
+      { name: "Oddiy", price: "35 000", image: Twister },
+      { name: "Pishloqli", price: "38 000", image: Twister }
     ],
     garnir: [
       { name: "Fri o'rta", price: "16 000", image: Fri },
@@ -374,10 +376,12 @@ export default function NavzaLoungeMenu() {
       { name: "Pishloq", price: "3 000", image: Sirniy }
     ],
     Salat: [
-      { name: "Barf", price: "30 000", image: Barf },
-      { name: "Sezar", price: "35 000", image: Sezar },
-      { name: "Olivye", price: "25 000", image: Olivye },
-      { name: "Mujskoy Kapriz", price: "40 000", image: Mujskoy }
+      { name: "Barf", price: "40 000", image: Barf },
+      { name: "Sezar", price: "45 000", image: Sezar },
+      { name: "Majnuntol", price: "40 000", image: Majnuntol },
+      { name: "Fransuzkiy", price: "40 000", image: Fransuzkiy },
+      { name: "Mujskoy Kapriz (Go'shtli)", price: "48 000", image: Mujskoy },
+      { name: "Jenskiy Kapriz (Kolbasali)", price: "45 000", image: Mujskoy }
     ],
     ichimlik: [
       { name: "Coca-Cola 0.5L", price: "8 000", image: Cola },
